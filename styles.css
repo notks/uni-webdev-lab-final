@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-family: Roboto;
   overflow-x: hidden;
-  color: white;
 }
 .active_nav {
   font-weight: bold;
@@ -14,6 +13,7 @@ body {
   position: relative;
   display: flex;
 }
+
 .hero nav {
   z-index: 100;
 }
@@ -25,17 +25,23 @@ body {
   list-style: none;
   align-items: center;
 }
+
 .hero nav ul li {
   margin-right: 50px;
   font-size: 24px;
 }
-.hero nav ul li a {
-  text-decoration: none;
-  color: black;
-}
+
 .hero nav ul li a img {
   width: 50px;
   height: 50px;
+}
+.homenav {
+  text-decoration: none;
+  color: black;
+}
+.nav {
+  color: white;
+  text-decoration: none;
 }
 .hero svg {
   position: absolute;
@@ -61,7 +67,6 @@ body {
   height: 150px;
   text-align: center;
   font-weight: bold;
-  color: black;
 }
 .main_hero_section_txtbtn a {
   text-decoration: none;
@@ -93,6 +98,7 @@ body {
   width: 450px;
   height: 360px;
 }
+
 .home_main {
   margin: 0;
   padding: 0;
@@ -161,6 +167,8 @@ body {
 }
 .cupon p {
   text-align: center;
+  color: white;
+
   font-size: 36px;
 }
 .cupon_number {
@@ -169,6 +177,7 @@ body {
   width: 80%;
   border-radius: 50px;
   border: 1px solid white;
+  color: white;
 
   text-align: center;
 }
@@ -201,6 +210,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  color: white;
 }
 .new_colection_txtbtn {
   display: flex;
@@ -231,6 +241,8 @@ body {
 }
 
 .home_location {
+  color: white;
+
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -245,6 +257,8 @@ body {
   font-weight: bold;
 }
 .home_shipping {
+  color: white;
+
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -259,6 +273,8 @@ body {
   font-weight: bold;
 }
 .home_form form {
+  color: white;
+
   padding-top: 100px;
   background-color: #6159e5;
 
@@ -270,6 +286,7 @@ body {
 }
 .home_form form button {
   margin-top: 50px;
+
   margin-bottom: 100px;
   font-size: 48px;
   color: black;
@@ -317,8 +334,66 @@ body {
 }
 .home_footer p {
   font-size: 24px;
-  color: black;
   text-align: center;
+}
+
+/*-------------------------------------------------------------- proizvodi page css ---------------------------------------------------------------*/
+.main_proizvodi {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proizvod {
+  background-color: #6159e5;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  height: 300px;
+  border-radius: 30px;
+  color: white;
+}
+.proizvod a img {
+  height: 250px;
+  width: 200px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.textproizvod span {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.textproizvod p {
+  width: 80%;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.price {
+  width: 200px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.price span {
+  font-size: 96px;
+}
+.price p {
+  font-size: 36px;
+}
+#addToCart {
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.invert {
+  background-color: #6159e5;
+  color: white;
 }
 
 @media screen and (max-width: 480px) {
@@ -326,7 +401,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto;
-    color: white;
   }
   .active_nav {
     font-weight: bold;
@@ -354,7 +428,6 @@ body {
   }
   .hero nav ul li a {
     text-decoration: none;
-    color: black;
   }
   .hero nav ul li a img {
     width: 25px;
@@ -364,11 +437,20 @@ body {
     position: absolute;
     bottom: 0;
   }
+
   .main_hero_section {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
+  }
+  .homenav {
+    text-decoration: none;
+    color: black;
+  }
+  .nav {
+    color: white;
+    text-decoration: none;
   }
   .main_hero_section_txtbtn {
     width: 50vw;
@@ -384,7 +466,6 @@ body {
     height: 50px;
     text-align: center;
     font-weight: bold;
-    color: black;
   }
   .main_hero_section_txtbtn a {
     text-decoration: none;
@@ -663,7 +744,66 @@ body {
   }
   .home_footer p {
     font-size: 10px;
-    color: black;
     text-align: center;
+  }
+
+  /*----------------------------------------------------- responsive css for products page -----------------------------------------*/
+  .main_proizvodi {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proizvod {
+    background-color: #6159e5;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    height: 100px;
+    border-radius: 20px;
+    color: white;
+  }
+  .proizvod a img {
+    height: 80px;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  .textproizvod span {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .textproizvod p {
+    width: 80%;
+    font-size: 7px;
+    max-height: 80%;
+    margin-left: 20px;
+  }
+  .price {
+    width: 100px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .price span {
+    font-size: 40px;
+  }
+  .price p {
+    font-size: 15px;
+  }
+  #addToCart {
+    width: 90px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    font-size: 9px;
+    font-weight: bold;
+  }
+  .invert {
+    background-color: #6159e5;
+    color: white;
   }
 }
