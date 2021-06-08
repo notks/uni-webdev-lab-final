@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./tptpobrazac.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="hero">
+      <nav>
+        <ul>
+          <li class="active_nav"><a href="#">Home</a></li>
+          <li><a href="#">Proizvodi</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li>
+            <a href="#"><img src="./img/instagram_icon.png" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/Facebook_f_logo_(2019).svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main_hero_section">
+        <div class="main_hero_section_img">
+          <img src="./img/undraw_book_lover_mkck.svg" />
+        </div>
+        <div class="main_hero_section_txtbtn">
+          <p>Knjiga je san koji drzite u ruci</p>
+          <a href="#" target="_blank"
+            ><div><span>Shop now</span></div></a
+          >
+        </div>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 280"
+        style="pointer-events: none"
+      >
+        <path
+          fill="#6159E5"
+          fill-opacity="1"
+          d="M0,160L48,133.3C96,107,192,53,288,80C384,107,480,213,576,229.3C672,245,768,171,864,165.3C960,160,1056,224,1152,213.3C1248,203,1344,117,1392,74.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <section class="home_main">
+      <div class="home_discount">
+        <p>
+          <span>Ogranicena ponuda </span><br />
+          Popust od 30% na sve naslove
+        </p>
+
+        <img src="./img/undraw_discount_d4bd.svg" alt="" srcset="" />
+      </div>
+      <div class="vertical_spaced">
+        <div class="left_side">
+          <img
+            class="sidebar_img_left"
+            src="./img/1622413257997.jpg"
+            alt=""
+            srcset=""
+          />
+          <p>Naida<br />Sinanovic</p>
+          <img class="sidebar_img_left" src="./img/1591836065115.jpeg" />
+          <p>Kemal <br />Selimbasic</p>
+        </div>
+        <div class="home_center">
+          <div class="cupon">
+            <p>Iskoristite kupon za povoljniju trgovinu</p>
+            <div class="cupon_number">5dHxfA</div>
+          </div>
+          <img src="./img/undraw_Bookshelves_re_lxoy.svg" alt="" srcset="" />
+        </div>
+
+        <div class="right_side">
+          <iframe
+            width="794"
+            height="447"
+            src="https://www.youtube.com/embed/JaHJFQwqDvw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <span> Partneri </span>
+          <p>Najveca BIH online knjizara</p>
+          <img src="./img/Logo.png" alt="" srcset="" />
+          <p>Potrazite zeljene naslove u audio formatu.</p>
+          <img
+            src="./img/audible_logo_inverse._V517446980_.svg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="new_collection">
+        <img src="./img/undraw_book_reading_kx9s.svg" alt="" srcset="" />
+        <div class="new_colection_txtbtn">
+          <p>Nova kolekcija romana</p>
+          <a href="#"><div>Pretrazite nove naslove</div></a>
+        </div>
+      </div>
+      <div class="home_location">
+        <p>
+          <span>Nalazimo se na novoj lokaciji </span><br />Neka bezveze adresa
+          ,Tuzla 75000
+        </p>
+        <img src="./img/undraw_business_shop_qw5t.svg" alt="" srcset="" />
+      </div>
+      <div class="home_shipping">
+        <img src="./img/undraw_Delivery_re_f50b.svg" alt="" />
+        <p>Sva dostava do 10.06.2021 je besplatna!</p>
+      </div>
+    </section>
+    <section class="home_form">
+      <form id="form" onsubmit="onsubmitFunc()">
+        <span>Kontaktirajte nas</span>
+        <label for="ime">Ime</label>
+        <input id="ime" type="text" name="ime" required />
+        <label for="email">E-Mail</label>
+        <input id="email" type="email" name="email" required />
+        <label for="telefon">Telefon</label>
+        <input id="telefon" type="text" name="telefon" />
+        <label for="poruka">Poruka</label>
+        <textarea id="poruka" name="poruka" required></textarea>
+        <button type="submit" id="formbtn">Posalji</button>
+      </form>
+    </section>
+    <footer class="home_footer">
+      <p>Dizajnirali: Naida Sinanovic, Kemal Selimbasic <br />2021.godina</p>
+    </footer>
+  </body>
+</html>
