@@ -440,9 +440,11 @@ body {
 
   .main_hero_section {
     width: 100vw;
-    height: 100vh;
     display: flex;
-    flex-direction: row;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .homenav {
     text-decoration: none;
@@ -454,7 +456,7 @@ body {
   }
   .main_hero_section_txtbtn {
     width: 50vw;
-    height: 80%;
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -488,9 +490,10 @@ body {
   }
   .main_hero_section_img {
     width: 50vw;
-    height: 80%;
+    margin: 0;
     display: flex;
     align-items: center;
+    height: 50vh;
     justify-content: center;
   }
   .main_hero_section_img img {
@@ -581,8 +584,9 @@ body {
     width: 80%;
     border-radius: 50px;
     border: 1px solid white;
-
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .right_side {
     width: 33%;
@@ -603,6 +607,7 @@ body {
   }
   .right_side p {
     font-size: 12px;
+    margin-left: 10px;
     text-align: center;
   }
   .right_side img {
@@ -649,6 +654,7 @@ body {
   }
 
   .home_location {
+    margin-left: 10px;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
@@ -759,7 +765,7 @@ body {
     width: 80%;
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     height: 100px;
     border-radius: 20px;
     color: white;
