@@ -2,7 +2,7 @@ var ime = document.getElementById("ime");
 var email = document.getElementById("email");
 var telefon = document.getElementById("telefon");
 var poruka = document.getElementById("poruka");
-var btn = document.getElementById("formbtn");
+var form = document.getElementById("form");
 var cartBtn = document.getElementById("addToCart");
 var a = (e) => {
   console.log(localStorage.getItem("cart"));
@@ -24,11 +24,17 @@ try {
 } catch (error) {}
 
 try {
-  btn.addEventListener("click", () => {
-    if (!ime.value || !email.value || !telefon.value || !poruka.value) {
-      alert("Niste popunili sva polja");
-    } else {
-      alert("Uspjesno ste poslali poruku");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    console.log("aaaaaaaaaa");
+    if (ime.value && email.value && telefon.value && poruka.value) {
+      if (isNaN(telefon.value)) {
+        alert("Niste ispravno popunili sva polja");
+      } else {
+        alert("Uspjesno ste poslali poruku");
+        window.location.reload(true);
+      }
     }
   });
 } catch (error) {}
