@@ -327,13 +327,14 @@ body {
 }
 .home_footer {
   width: 100%;
-  height: 100px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .home_footer p {
-  font-size: 24px;
+  font-size: 20px;
+
   text-align: center;
 }
 
@@ -372,6 +373,7 @@ body {
 }
 .price {
   width: 200px;
+  pointer-events: none;
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -390,6 +392,7 @@ body {
   background-color: white;
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .proizvod_cart {
@@ -442,6 +445,7 @@ body {
   border: none;
   border-radius: 50px;
 }
+/*----------------------------------------- contact css --------------------------------*/
 
 .main_contact {
 }
@@ -450,7 +454,7 @@ body {
   margin-bottom: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .inner_email {
   display: flex;
@@ -464,6 +468,79 @@ body {
   color: black;
   font-weight: bold;
   font-size: 48px;
+}
+
+.telephone {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.telephone_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.telephone_inner span {
+  font-size: 48px;
+}
+.telephone_inner p {
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.payment_inner {
+  max-width: 700px;
+}
+.payment_inner span {
+  font-size: 48px;
+}
+.payment_inner p {
+  font-size: 24px;
+}
+
+.shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.shipping_inner {
+  max-width: 700px;
+}
+.shipping_inner span {
+  font-size: 48px;
+}
+.shipping_inner p {
+  font-size: 24px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.about_inner {
+  max-width: 700px;
+}
+.about_inner span {
+  font-size: 48px;
+}
+.about_inner p {
+  font-size: 24px;
 }
 .invert {
   background-color: #6159e5;
@@ -932,6 +1009,122 @@ body {
     padding: 5px 30px 5px 30px;
     border: none;
     border-radius: 50px;
+  }
+
+  /*--------------------------responsive contact css ---------------*/
+
+  .email {
+    margin-left: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .email img {
+    width: 100px;
+    height: 100px;
+  }
+  .inner_email {
+    display: flex;
+    flex-direction: column;
+  }
+  .inner_email span {
+    font-size: 24px;
+  }
+  .inner_email a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .telephone {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+  }
+  .telephone img {
+    width: 100px;
+    height: 100px;
+  }
+  .telephone_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .telephone_inner span {
+    font-size: 24px;
+  }
+  .telephone_inner p {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-bottom: 100px;
+  }
+  .payment img {
+    width: 100px;
+    height: 100px;
+  }
+  .payment_inner {
+    max-width: 300px;
+  }
+  .payment_inner span {
+    font-size: 24px;
+  }
+  .payment_inner p {
+    font-size: 12px;
+  }
+
+  .shipping {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-bottom: 100px;
+  }
+  .shipping img {
+    width: 100px;
+    height: 100px;
+  }
+  .shipping_inner {
+    max-width: 300px;
+  }
+  .shipping_inner span {
+    font-size: 24px;
+  }
+  .shipping_inner p {
+    font-size: 12px;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-bottom: 100px;
+  }
+  .about img {
+    width: 100px;
+    height: 100px;
+  }
+  .about_inner {
+    max-width: 300px;
+  }
+  .about_inner span {
+    font-size: 24px;
+  }
+  .about_inner p {
+    font-size: 12px;
   }
 
   .invert {
