@@ -443,6 +443,28 @@ body {
   border-radius: 50px;
 }
 
+.main_contact {
+}
+.email {
+  margin-left: 30px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inner_email {
+  display: flex;
+  flex-direction: column;
+}
+.inner_email span {
+  font-size: 48px;
+}
+.inner_email a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 48px;
+}
 .invert {
   background-color: #6159e5;
   color: white;
@@ -835,7 +857,7 @@ body {
   }
   .textproizvod p {
     width: 80%;
-    font-size: 9px;
+    font-size: 5px;
     max-height: 80%;
     margin-left: 20px;
   }
