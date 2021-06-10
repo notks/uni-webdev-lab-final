@@ -391,6 +391,58 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+
+.proizvod_cart {
+  background-color: #6159e5;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  height: 120px;
+  border-radius: 30px;
+  color: white;
+}
+.proizvod_cart a img {
+  height: 75px;
+  width: 55px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.proizvod_cart span {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.price_cart {
+  width: 200px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.price_cart span {
+  font-size: 96px;
+}
+.price_cart p {
+  font-size: 36px;
+}
+.cart_btn {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.cart_btn button {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  background-color: #6159e5;
+  padding: 5px 30px 5px 30px;
+  border: none;
+  border-radius: 50px;
+}
+
 .invert {
   background-color: #6159e5;
   color: white;
@@ -783,7 +835,7 @@ body {
   }
   .textproizvod p {
     width: 80%;
-    font-size: 7px;
+    font-size: 9px;
     max-height: 80%;
     margin-left: 20px;
   }
@@ -808,6 +860,58 @@ body {
     font-size: 9px;
     font-weight: bold;
   }
+
+  .proizvod_cart {
+    background-color: #6159e5;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    height: 120px;
+    border-radius: 30px;
+    color: white;
+  }
+  .proizvod_cart a img {
+    height: 75px;
+    width: 55px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  .proizvod_cart span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .price_cart {
+    width: 200px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .price_cart span {
+    font-size: 50px;
+  }
+  .price_cart p {
+    font-size: 20px;
+  }
+  .cart_btn {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .cart_btn button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #6159e5;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    border-radius: 50px;
+  }
+
   .invert {
     background-color: #6159e5;
     color: white;

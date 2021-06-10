@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-
+<script src="./tptpobrazac.js" defer ></script>
     <title>Document</title>
   </head>
-  <body>
+  <body onload="loadCart()">
     <section class="hero invert">
       <nav>
         <ul>
           <li><a class="nav" href="./index.html">Home</a></li>
-          <li class="active_nav"><a class="nav" href="#">Proizvodi</a></li>
+          <li><a class="nav" href="./proizvodi.html">Proizvodi</a></li>
           <li><a class="nav" href="./contact.html">Kontakt</a></li>
+          <li>
+            <a href="./cart.html"
+              ><img src="./img/cart2.png" alt=""
+            /></a>
+          </li>
           <li>
             <a href="#"><img src="./img/instagram_icon.png" /></a>
           </li>
@@ -46,148 +51,15 @@
         ></path>
       </svg>
     </section>
-    <section class="main_proizvodi">
-<div class="proizvod">
- <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-  <div class="textproizvod">
-    <span>Naucite Bootstrap 4</span>
-    <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-  </div>
-  <div class="price_proizvodi">
-    <div class="price">
-      <span>99</span>
-      <p>KM</p>
-    </div>
-    <button id="addToCart">Dodaj u korpu</button>
-  </div>
+    <section class="main_proizvodi" id="main_cart">
+
+
+    </section><div class="cart_btn">
+        <button id="clear">Isprazni korpu</button> 
+
+   <button onclick="buy()">Kupi</button>
+
 </div>
-<div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
- <div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
- <div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
- <div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
- <div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
- <div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
- <div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
- <div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
- <div class="proizvod">
-  <a href="./img/bootstrap_4.jpg" target="_blank"> <img src="./img/bootstrap_4.jpg"  alt="" srcset=""></a>
-   <div class="textproizvod">
-     <span>Naucite Bootstrap 4</span>
-     <p>Opis: Gradite prilagodljive, dinamičke i mobile-first aplikacije na Vebu pomoću Bootstrapa 4 Šta ćete naučiti: - da kreirate profesionalni veb sajt zasnovan na Bootstrap...</p>
-   </div>
-   <div class="price_proizvodi">
-     <div class="price">
-       <span>99</span>
-       <p>KM</p>
-     </div>
-     <button id="addToCart">Dodaj u korpu</button>
-   </div>
- </div>
-    </section>
     <footer class="home_footer invert">
       <p>Dizajnirali: Naida Sinanovic, Kemal Selimbasic <br />2021.godina</p>
     </footer>
